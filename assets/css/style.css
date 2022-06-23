@@ -113,8 +113,10 @@ h1, h2, h3, h4, h5, h6 {
 
 /* icons */
 .slack-icon {
-  width: 40px;
+  width: 60px;
+  height: auto;
   padding-left: 10px;
+  padding-right: 10px;
 }
 
 /*--------------------------------------------------------------
@@ -123,6 +125,8 @@ h1, h2, h3, h4, h5, h6 {
 #header {
   transition: all 0.5s;
   z-index: 997;
+  margin-left: 2.5%;
+  margin-top: 10px;
   /* padding: 20px 0; */
 }
 #header.header-scrolled, #header.header-inner-pages {
@@ -134,7 +138,6 @@ h1, h2, h3, h4, h5, h6 {
   border: 2px solid #254547; 
   border-radius: 25px;
   position: fixed;
-  
   width: 95%;
   margin-left: 2.5%;
   margin-top: 10px;
@@ -514,7 +517,7 @@ section {
   padding-bottom: 20px;
   position: relative;
 }
-.section-title h2::after {
+/* .section-title h2::after {
   content: "";
   position: absolute;
   display: block;
@@ -523,7 +526,7 @@ section {
   background: #5846f9;
   bottom: 0;
   left: calc(50% - 25px);
-}
+} */
 .section-title p {
   margin-bottom: 0;
 }
@@ -531,9 +534,11 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+/* 
 .why {
   padding: 120px 0;
 }
+
 .why .content h3 {
   font-size: 20px;
   font-weight: 600;
@@ -571,12 +576,12 @@ section {
   margin-top: 30px;
   color: #fff;
   background-color: #254547;
-  /* border: 2px solid #fff; */
-}
+  border: 2px solid #fff;
+} 
 .why .content .read-more:hover {
   background: #fff;
   color: #254547;
-  /* border-radius: 20px; */
+  border-radius: 20px;
 }
 .why .content .read-more i {
   font-size: 22px;
@@ -584,6 +589,7 @@ section {
   right: 20px;
   top: 12px;
 }
+*/
 
 /*--------------------------------------------------------------
 # Counts
@@ -615,6 +621,11 @@ section {
   transition: all ease-in-out 0.3s;
   background: #fff;
 }
+/* .teams .why-box {
+  width: 40%; 
+  padding: 1px;
+}  */
+
 .teams .icon-box .icon {
   margin: 0 auto;
   width: 100px;
@@ -1448,4 +1459,29 @@ section {
   background: rgba(255, 255, 255, 0.2);
   color: #fff;
   text-decoration: none;
+}
+
+.integrations-row {
+  width: 100%;
+  text-align: center;
+  background: linear-gradient(45deg, rgba(25, 45, 47, 0.9) 0%, rgba(26, 60, 55, 0.9) 100%);
+  border: 1px solid #254547;
+  padding: 20px;
+}
+.integrations-row .btn-get-started {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 28px;
+  border-radius: 5px;
+  transition: 0.5s;
+  margin-top: 30px;
+  color: #fff;
+  border: 2px solid #fff;
+}
+.integrations-row .btn-get-started:hover {
+  background: #fff;
+  color: #254547;
 }
