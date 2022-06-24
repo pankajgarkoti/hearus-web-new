@@ -726,6 +726,10 @@ section {
 /*--------------------------------------------------------------
 # Features
 --------------------------------------------------------------*/
+.features .list-img {
+  width: 64;
+  height: auto;
+}
 .features .icon-box h4 {
   font-size: 20px;
   font-weight: 700;
