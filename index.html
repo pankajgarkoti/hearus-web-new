@@ -49,13 +49,14 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#teams">Why?</a></li>
+          <li><a class="nav-link scrollto" href="#why">Why?</a></li>
           <li><a class="nav-link scrollto" href="#features">Features</a></li>
-          <li class="dropdown"><a href="#"><span>Integrations</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a class="nav-link scrollto" href="#integrations"><span>Integrations</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="#">Slack</a></li>
-              <li><a href="#">Cisco Webex</a></li>
-              <li><a href="#">Microsoft Teams</a></li>
+              <li><a class="nav-link scrollto" href="#integrations">Slack</a></li>
+              <li><a class="nav-link scrollto" href="#integrations">Cisco Webex</a></li>
+              <li><a class="nav-link scrollto" href="#integrations">Microsoft Teams</a></li>
+              <li><a class="nav-link scrollto" href="#integrations">Gmail</a></li>
             </ul>
           </li>
             <a class="getstarted scrollto" href="https://www.hearus.me/slack/install">Add to Slack
@@ -199,75 +200,83 @@
       <div class="container">
 
         <div class="row counters">
-          <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Companies</p>
+          <div class="col-lg-4 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1" data-purecounter class="purecounter countnum"></span>
+            <p><b>Companies</b></p>
           </div>
 
-          <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Employees</p>
+          <div class="col-lg-4 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter countnum"></span>
+            <p><b>Employees</b></p>
           </div>
 
-          <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="14630" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Moods Reported</p>
+          <div class="col-lg-4 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1" class="purecounter countnum-k"></span>
+            <p><b>Listening Hrs.</b></p>
           </div>
 
-          <div class="col-lg-3 col-6 text-center">
+          <!-- <div class="col-lg-3 col-6 text-center">
             <span data-purecounter-start="0" data-purecounter-end="1234" data-purecounter-duration="1" class="purecounter"></span>
             <p>Therapy Sessions</p>
-          </div>
+          </div> -->
 
         </div>
 
       </div>
     </section><!-- End Counts Section -->
 
-    <!-- ======= Features Section ======= -->
     <section id="features" class="features">
       <div class="container" data-aos="fade-up">
         <div class="section-title">
           <h2>Features</h2>
         </div>
         <div class="row">
-          <div class="col-lg-6 order-1 order-lg-2 d-flex flex-column"> 
-            <ul class="feature-list">
-              <style type="text/css">
-                ul li:first-child{
-                  list-style-image:url('assets/img/graph.png');
-                }
-                ul li:first-child + li{
-                  list-style-image:url('assets/img/graph.png');
-                }
-                ul li:first-child + li + li{
-                  list-style-image:url('assets/img/graph.png');
-                }
-                ul li:first-child + li + li + li{
-                  list-style-image:url('assets/img/graph.png');
-                }
-              </style>
-              <li>
-                <h4>Mood Tracking</h4>
-                <p>Track the north star metric of your team - Mood.</p>
-              </li>
-              <li>
-                <h4>Anonymized Feedback</h4>
-                <p>Get honest feedback that keeps you in the loop at all times.</p>
-              </li>
-              <li>
-                <h4>Give Advice and Resolve Issues</h4>
-                <p>Your team looks up to you. We make anonymously approaching you for advice easier and hassle free.</p>
-              </li>
-              <li>
-                <h4>Listeners and Therapy</h4>
-                <p>Your team gets access to certified professional therapists and trained empathetic listeners because they deserve the best in mental health care.</p>
-              </li>
-            </ul>
-          </div>
-        
-          <!-- <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column align-items-lg-start">
-            <div class="icon-box mt-5 mt-lg-0" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 col-md-12 order-2 order-lg-1 d-flex flex-column align-items-lg-center">
+            <div class="row gy-4">
+              <div class="col-lg-3 col-md-12 d-flex align-items-lg-center why-box" data-aos="zoom-in" data-aos-delay="100">
+                <div class="icon-box iconbox-blue">
+                  <div class="icon">
+                    <img src="assets/img/graph.png" style="width: 96px;">
+                  </div>
+                  <br>
+                  <h4>Mood Tracking</h4>
+                  <p>Track the north star metric of your team - Mood. Organise events, sprints and activities accordingly to keep your team energised and ready to rock.</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-12 d-flex align-items-lg-center why-box" data-aos="zoom-in" data-aos-delay="100">
+                <div class="icon-box iconbox-blue">
+                  <div class="icon">
+                    <img src="assets/img/anonymous.png" style="width: 96px;">
+                  </div>
+                  <br>
+                  <h4>Anonymized Feedback</h4>
+                  <p>Fear of retaliation prevents employees from being honest about their problems. We help you get honest feedback that keeps you in the loop at all times.</p>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-12 d-flex align-items-lg-center why-box" data-aos="zoom-in" data-aos-delay="100">
+                <div class="icon-box iconbox-blue">
+                  <div class="icon">
+                    <img src="assets/img/advice.png" style="width: 96px;">
+                  </div>
+                  <br>
+                  <h4>Give Advice and Resolve Issues</h4>
+              <p>Your team looks up to you. We make anonymously approaching you for advice easier and hassle free.</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-12 d-flex align-items-lg-center why-box" data-aos="zoom-in" data-aos-delay="100">
+                <div class="icon-box iconbox-blue">
+                  <div class="icon">
+                    <img src="assets/img/therapy.png" style="width: 96px;">
+                  </div>
+                  <br>
+                  <h4>Listeners and Therapy</h4>
+              <p>Get your team access to certified professional therapists and trained empathetic listeners.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="icon-box mt-5 mt-lg-0" data-aos="fade-up" data-aos-delay="100">
               <i class="bx bx-receipt"></i>
               <h4>Mood Tracking</h4>
               <p>Track the north star metric of your team - Mood.</p>
@@ -284,19 +293,17 @@
               <p>Your team looks up to you. We make anonymously approaching you for advice easier and hassle free.</p>
             </div>
             <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="200">
-              <i class="bx" style="background-image: 'assets/img/therapy.png';"></i>
+              <i class="bx bx-cube-alt"></i>
               <h4>Listeners and Therapy</h4>
               <p>Your team gets access to certified professional therapists and trained empathetic listeners because they deserve the best in mental health care.</p>
-            </div>
-          </div> -->
-          <div class="image col-lg-6 order-1 order-lg-2 " data-aos="zoom-in" data-aos-delay="100">
-            <img src="assets/img/features.svg" alt="" class="img-fluid">
+            </div> -->
           </div>
         </div>
 
       </div>
-    </section><!-- End Features Section -->
+    </section>
 
+    <section id="integrations">
       <div class="container" data-aos="fade-up">
         <div class="integrations-row">
           <h2 style="color: #fff;">We integrate seemlessly with your existing tools.</h2>
@@ -327,11 +334,12 @@
               <h3 style="color: #fff;">Gmail</h3>
             </div>
           </div>
-          <div><a href="https://www.hearus.me/slack/install" class="btn-get-started scrollto" style="text-align: center;">
+          <div><a href="https://calendly.com/yednap868/onboarding-call" class="btn-get-started scrollto" style="text-align: center;">
             Request Demo
           </a>
         </div>
       </div>
+    </section>
 
     <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials section-bg">
@@ -727,20 +735,23 @@
               <p>A108 Adam Street, New York, NY 535022</p>
             </div>
           </div>
-
+          
           <div class="col-lg-3 col-md-6">
             <div class="info-box  mb-4">
               <i class="bx bx-envelope"></i>
+              <a href="mailto://info@hearus.me"></a>
               <h3>Email Us</h3>
-              <p>contact@example.com</p>
+              <p>info@hearus.me</p>
+              </a>
             </div>
           </div>
+       
 
           <div class="col-lg-3 col-md-6">
             <div class="info-box  mb-4">
               <i class="bx bx-phone-call"></i>
               <h3>Call Us</h3>
-              <p>+1 5589 55488 55</p>
+              <p>+91 8368 828 660</p>
             </div>
           </div>
         </div>
@@ -762,11 +773,11 @@
               Kapashera<br>
               New Delhi, 110037<br>
               Inida <br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
+              <strong>Phone:</strong> +91 8368 828 660<br>
               <strong>Email:</strong> info@hearus.me<br>
             </p>
           </div>
-
+<!-- 
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
@@ -776,7 +787,7 @@
               <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
             </ul>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -793,11 +804,10 @@
           </div>
         </div>
         <div class="social-links text-center text-md-right pt-3 pt-md-0">
-          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a> -->
+          <a href="https://www.instagram.com/hearus.me/" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="https://www.linkedin.com/company/hearus/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
         </div>
       </div>
     </div>
