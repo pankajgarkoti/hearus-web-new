@@ -761,7 +761,7 @@ section {
 .testimonials .testimonial-item .testimonial-img {
   width: 90px;
   border-radius: 50%;
-  margin: -40px 0 0 40px;
+  margin: -40px 0 0 30px;
   position: relative;
   z-index: 2;
   border: 6px solid #fff;
