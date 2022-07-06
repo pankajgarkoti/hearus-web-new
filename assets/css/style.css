@@ -1556,3 +1556,191 @@ section {
 .countnum-k::after{
   content: "K +";
 }
+
+/*--------------------------------------------------------------
+# startup-hero Section
+--------------------------------------------------------------*/
+#startup-hero {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(45deg, rgba(25, 45, 47, 0.9) 0%, rgba(26, 60, 55, 0.9) 100%), url("../img/startup-hero-bg.jpg") center center no-repeat;
+  background-size: cover;
+}
+#startup-hero .container, #startup-hero .container-fluid {
+  padding-top: 84px;
+}
+#startup-hero h1 {
+  margin: 0;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 64px;
+  color: #fff;
+}
+#startup-hero h2 {
+  color: rgba(255, 255, 255, 0.8);
+  margin: 10px 0 0 0;
+  font-size: 20px;
+}
+#startup-hero .btn-get-started {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 28px;
+  border-radius: 5px;
+  transition: 0.5s;
+  margin-top: 30px;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+#startup-hero .btn-redeem {
+  max-width: fit-content;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 28px;
+  border-radius: 5px;
+  transition: 0.5s;
+  margin-top: 30px;
+  color: #fff;
+  border: 2px solid #fff;
+  width: auto;
+  
+}
+
+#startup-hero .btn-redeem:hover {
+  background: #fff;
+  color: #254547;
+}
+
+#startup-hero .btn-get-started:hover {
+  background: #fff;
+  color: #254547;
+}
+#startup-hero .animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+@media (min-width: 1200px) {
+  #startup-hero {
+    background-attachment: fixed;
+  }
+}
+@media (max-width: 991px) {
+  #startup-hero {
+    text-align: center;
+  }
+  #startup-hero .container, #startup-hero .container-fluid {
+    padding-top: 68px;
+  }
+  #startup-hero .animated {
+    -webkit-animation: none;
+    animation: none;
+  }
+  #startup-hero .startup-hero-img {
+    text-align: center;
+  }
+  #startup-hero .startup-hero-img img {
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  #startup-hero h1 {
+    font-size: 26px;
+    line-height: 36px;
+  }
+  #startup-hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  #startup-hero .startup-hero-img img {
+    width: 60%;
+  }
+}
+@media (max-width: 575px) {
+  #startup-hero .startup-hero-img img {
+    width: 80%;
+  }
+}
+@media (max-width: 575px), (max-height: 600px) {
+  #startup-hero {
+    height: auto;
+  }
+}
+
+@-webkit-keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+#vcs {
+  width: 100%;
+  height: auto;
+  background: #ffffff99, url("../img/startup-hero-bg.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+#vcs .vc-logo-box {
+  /* border-radius: 25px; */
+  background-color: #fff;
+  border: 2px solid #fff;
+  padding: 20px;
+  width: auto;
+  height: auto;
+  align-items: center;
+  /* justify-content: center; */
+  vertical-align: middle;
+  position: relative;
+}
+
+#vcs .vc-logo-box .img {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#vcs .vc-logo-box:hover {
+  border-color: #fff;
+  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.2);
+}
+
+#benefits {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  background-size: cover;
+}
+
+#benefits .benefits-tile {
+    border-radius: 25px;
+    background-color: #fff;
+    border: 2px solid #fff;
+    padding: 20px;
+    width: auto;
+    height: auto;
+    align-items: center;
+    /* justify-content: center; */
+    vertical-align: middle;
+    position: relative;
+}
