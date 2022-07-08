@@ -1,16 +1,17 @@
 
 #benefits-box {
-    width: 90vw;
+    width: 95vw;
     height: auto;
-    border: 1px solid #254547bb;
+    /* border: 1px solid #254547bb; */
     border-radius: 0px;
-    margin: -20px 5vw 10px 5vw;
-    background-color: #254547;
+    margin: 10vh 2.5vw 10px 2.5vw;
+    background-color: transparent;
+    padding: 40px, 40px, 40px, 40px;
     /* box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24); */
 }
 
 #benefits-box h2 {
-    color: #fff;
+    color: #254547;
     text-align: center;
     padding-bottom: 16px;
     font-size: 32px;
@@ -23,7 +24,7 @@
   }
 
 #benefits-box h1 {
-    color: #fff;
+    color: #254547;
     text-align: center;
     padding-bottom: 16px;
     font-size: 48 px;
@@ -44,6 +45,70 @@
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
 }
 
+
 #benefits-box img {
     width: 64px;
 }
+
+#benefits-box .icon-box {
+    text-align: center;
+    margin: 0;
+    padding: 50px 20px 60px 20px;
+    transition: all ease-in-out 0.3s;
+    background: #254547;
+}
+
+#benefits-box .icon-box .icon {
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in-out 0.3s;
+    position: relative;
+  }
+  #benefits-box .icon-box .icon i {
+    font-size: 36px;
+    transition: 0.5s;
+    position: relative;
+  }
+  #benefits-box .icon-box .icon svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #benefits-box .icon-box .icon svg path {
+    transition: 0.5s;
+    fill: #f5f5f5;
+  }
+  #benefits-box .icon-box h4 {
+    color: #fff;
+    font-weight: 600;
+    margin: 10px 0 15px 0;
+    font-size: 22px;
+  }
+  #benefits-box .icon-box h4 a {
+    color: #2c4964;
+    transition: ease-in-out 0.3s;
+  }
+
+  #benefits-box .icon-box h1 a {
+    color: #2c4964;
+    transition: ease-in-out 0.3s;
+  }
+
+  #benefits-box .icon-box p {
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+    color: #fff;
+  }
+  #benefits-box .icon-box:hover {
+    border-color: #fff;
+    transform: scale(1.1);
+    box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.5);
+}
+  #benefits-box .iconbox-blue i {
+    color: #47aeff;
+  }

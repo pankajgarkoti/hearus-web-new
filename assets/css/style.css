@@ -1612,6 +1612,12 @@ section {
   
 }
 
+@media screen and (max-width: 992px) {
+  #startup-hero .btn-redeem {
+    align-self: center;
+  }
+}
+
 .btn-redeem-alt {
   max-width: fit-content;
   font-family: "Poppins", sans-serif;
